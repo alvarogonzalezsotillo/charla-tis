@@ -18,8 +18,15 @@
 
 #+OPTIONS: html-postamble:nil
 
+
 # IMAGENES AUTOENLAZADAS EN HTML
 #+begin_export html
+<style>
+  p.date { 
+     display: none; 
+  }
+</style>
+
 <script>
 window.addEventListener("load",()=>{
   let images = document.getElementsByTagName('img'); 
@@ -27,7 +34,7 @@ window.addEventListener("load",()=>{
 
   for( let i of images){
     i.style.cursor = "pointer";
-    i.onclick = ()=> window.location = i.src; 
+    i.onclick = ()=> window.open( i.src ); 
   }
 });
 
@@ -37,6 +44,14 @@ window.addEventListener("load",()=>{
 #+AUTHOR: Paz Fábregas Seguí
 #+EMAIL: paz.fabregas@educa.madrid.org
 
+* Tipos de demandas
+- Evaluación psicopedagógica
+- Intervención PTSC
+- DEAL
+- Dificultades del lenguage (demanda de AL)
+- Demanda de intervención compensatoria
+- Otros
+  - /Screening/ AACC
 
 * Caso simplificado
 - No contempla coordinaciones
