@@ -1,0 +1,141 @@
+# PARA ORG-REVEAL
+#+REVEAL_HLEVEL: 1
+#+REVEAL_SLIDE_FOOTER:
+#+REVEAL_SLIDE_HEADER:
+#+REVEAL_PLUGINS: (highlight notes)
+#+REVEAL_ROOT: /home/alvaro/apuntes-clase/common/reveal.js
+#+OPTIONS: reveal_single_file:t
+#+REVEAL_INIT_SCRIPT: width: '100%'
+# Available transitions are: default|cube|page|concave|zoom|linear|fade|none
+#+REVEAL_TRANS: linear
+# beige black blood league moon night serif simple sky solarized white
+#+REVEAL_THEME: beige
+
+# IMAGENES AUTOENLAZADAS EN HTML
+#+begin_export html
+<script>
+window.addEventListener("load",()=>{
+  let images = document.getElementsByTagName('img'); 
+  console.log(`Autoenlazando ${images.length} imágenes...`);
+
+  for( let i of images){
+    i.style.cursor = "pointer";
+    i.onclick = ()=> window.location = i.src; 
+  }
+});
+
+</script>
+#+end_export
+
+
+
+#+AUTHOR: Paz Fábregas Seguí
+#+EMAIL: paz.fabregas@educa.madrid.org
+
+
+* Caso simplificado
+
+#+BEGIN_SRC plantuml :file plantuml.png
+@startuml
+|Tutor|
+start
+:Medidas ordinarias;
+|Familia|
+:Informar a la familia;
+|Equipo directivo|
+:Recepción de demanda;
+#aaaaff:Priorización de demandas;
+|Tutor|
+#aaaaff:Entrevista tutor-orientador;
+|Familia|
+#aaaaff:Entrevista familia-orientador (autorización);
+|#aaaaff|Orientador|
+#aaaaff:Evaluación;
+|Familia|
+#aaaaff:Devolución a familia;
+|Tutor|
+#aaaaff:Devolución a tutor/equipo de apoyo;
+|Orientador|
+#aaaaff:Derivaciones y coordinaciones;
+stop
+@enduml
+#+END_SRC
+
+#+RESULTS:
+[[file:plantuml.png]]
+
+
+* ACNEE por transtorno grave de conducta
+#+BEGIN_SRC plantuml :file acnee-grave-conducta.png
+@startuml
+|EOEP|
+start
+:Proceso de evaluación;
+:Informe;
+:Dictámen;
+split
+|USMI|
+:Derivación al pediatra;
+:Diagnóstico clínico;
+split again
+|Inspección|
+:Apueba dictámen;
+note right
+Con apoyos
+PT y/o AL
+end note
+|Centro educativo|
+end split
+:Solicitud a la SUPE (TIS);
+note right
+Con diagnóstico 
+clínico 
+y dictámen 
+aprobado
+por la 
+inspección
+end note
+|SUPE|
+:Aprueba TIS;
+stop
+@enduml
+#+END_SRC
+
+#+RESULTS:
+[[file:acnee-grave-conducta.png]]
+
+* Equipo de apoyo
+
+#+BEGIN_SRC plantuml :file equipo-apoyo.png
+@startuml
+
+:PT: 
+:AL: 
+
+
+
+:Fisio:
+:ATE III:
+:Jefa de estudios:
+
+rectangle EOEP{
+  :PTSC: 
+  :Orientadora: 
+}
+
+:TIS:
+
+note right of TIS: Preferente TEA
+
+note left of TIS: ACNEE por trastorno de conducta
+
+@enduml
+#+END_SRC
+
+#+RESULTS:
+[[file:equipo-apoyo.png]]
+
+* Otros formatos
+- PDF
+- Página web 
+- Transparencias
