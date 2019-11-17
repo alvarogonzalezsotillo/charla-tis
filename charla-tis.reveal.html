@@ -2,7 +2,7 @@
 <html lang="es">
 <head>
 <meta charset="utf-8"/>
-<title></title>
+<title>Modelo de intervención</title>
 <meta name="author" content="(Paz Fábregas Seguí)"/>
 <style type="text/css">
 .underline { text-decoration: underline; }
@@ -1400,39 +1400,42 @@ body {
 
 <style type="text/css">
 /**
- * Beige theme for reveal.js.
+ * Sky theme for reveal.js.
  *
  * Copyright (C) 2011-2012 Hakim El Hattab, http://hakim.se
  */
-@import url(../../lib/font/league-gothic/league-gothic.css);
-@import url(https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Quicksand:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700);
+.reveal a {
+  line-height: 1.3em; }
+
 /*********************************************
  * GLOBAL STYLES
  *********************************************/
 body {
-  background: #f7f2d3;
-  background: -moz-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, white), color-stop(100%, #f7f2d3));
-  background: -webkit-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -o-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: -ms-radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background: radial-gradient(center, circle cover, white 0%, #f7f2d3 100%);
-  background-color: #f7f3de; }
+  background: #add9e4;
+  background: -moz-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #f7fbfc), color-stop(100%, #add9e4));
+  background: -webkit-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: -o-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: -ms-radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background: radial-gradient(center, circle cover, #f7fbfc 0%, #add9e4 100%);
+  background-color: #f7fbfc; }
 
 .reveal {
-  font-family: "Lato", sans-serif;
+  font-family: "Open Sans", sans-serif;
   font-size: 40px;
   font-weight: normal;
   color: #333; }
 
 ::selection {
   color: #fff;
-  background: rgba(79, 64, 28, 0.99);
+  background: #134674;
   text-shadow: none; }
 
 ::-moz-selection {
   color: #fff;
-  background: rgba(79, 64, 28, 0.99);
+  background: #134674;
   text-shadow: none; }
 
 .reveal .slides > section,
@@ -1451,10 +1454,10 @@ body {
 .reveal h6 {
   margin: 0 0 20px 0;
   color: #333;
-  font-family: "League Gothic", Impact, sans-serif;
+  font-family: "Quicksand", sans-serif;
   font-weight: normal;
   line-height: 1.2;
-  letter-spacing: normal;
+  letter-spacing: -0.08em;
   text-transform: uppercase;
   text-shadow: none;
   word-wrap: break-word; }
@@ -1472,7 +1475,7 @@ body {
   font-size: 1em; }
 
 .reveal h1 {
-  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9, 0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2), 0 5px 10px rgba(0, 0, 0, 0.25), 0 20px 20px rgba(0, 0, 0, 0.15); }
+  text-shadow: none; }
 
 /*********************************************
  * OTHER
@@ -1615,20 +1618,20 @@ body {
  * LINKS
  *********************************************/
 .reveal a {
-  color: #8b743d;
+  color: #3b759e;
   text-decoration: none;
   -webkit-transition: color .15s ease;
   -moz-transition: color .15s ease;
   transition: color .15s ease; }
 
 .reveal a:hover {
-  color: #c0a86e;
+  color: #74a7cb;
   text-shadow: none;
   border: none; }
 
 .reveal .roll span:after {
   color: #fff;
-  background: #564826; }
+  background: #264c66; }
 
 /*********************************************
  * IMAGES
@@ -1650,7 +1653,7 @@ body {
 
 .reveal a:hover img {
   background: rgba(255, 255, 255, 0.2);
-  border-color: #8b743d;
+  border-color: #3b759e;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.55); }
 
 /*********************************************
@@ -1658,31 +1661,31 @@ body {
  *********************************************/
 .reveal .controls .navigate-left,
 .reveal .controls .navigate-left.enabled {
-  border-right-color: #8b743d; }
+  border-right-color: #3b759e; }
 
 .reveal .controls .navigate-right,
 .reveal .controls .navigate-right.enabled {
-  border-left-color: #8b743d; }
+  border-left-color: #3b759e; }
 
 .reveal .controls .navigate-up,
 .reveal .controls .navigate-up.enabled {
-  border-bottom-color: #8b743d; }
+  border-bottom-color: #3b759e; }
 
 .reveal .controls .navigate-down,
 .reveal .controls .navigate-down.enabled {
-  border-top-color: #8b743d; }
+  border-top-color: #3b759e; }
 
 .reveal .controls .navigate-left.enabled:hover {
-  border-right-color: #c0a86e; }
+  border-right-color: #74a7cb; }
 
 .reveal .controls .navigate-right.enabled:hover {
-  border-left-color: #c0a86e; }
+  border-left-color: #74a7cb; }
 
 .reveal .controls .navigate-up.enabled:hover {
-  border-bottom-color: #c0a86e; }
+  border-bottom-color: #74a7cb; }
 
 .reveal .controls .navigate-down.enabled:hover {
-  border-top-color: #c0a86e; }
+  border-top-color: #74a7cb; }
 
 /*********************************************
  * PROGRESS BAR
@@ -1691,7 +1694,7 @@ body {
   background: rgba(0, 0, 0, 0.2); }
 
 .reveal .progress span {
-  background: #8b743d;
+  background: #3b759e;
   -webkit-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   -moz-transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985);
   transition: width 800ms cubic-bezier(0.26, 0.86, 0.44, 0.985); }
@@ -1702,17 +1705,17 @@ body {
 <body>
 <div class="reveal">
 <div class="slides">
-<section id="sec-title-slide"><h2 class="author">Paz Fábregas Seguí</h2><p class="date">Created: 2019-11-17 dom 13:07</p>
+<section id="sec-title-slide"><h1 class="title">Modelo de intervención</h1><h2 class="author">Paz Fábregas Seguí</h2><p class="date">Created: 2019-11-17 dom 13:38</p>
 </section>
 <section id="table-of-contents">
 <div id="table-of-contents">
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#/slide-orgb7f72bd">1. Caso simplificado</a></li>
-<li><a href="#/slide-orgbd13a82">2. ACNEE por transtorno grave de conducta</a></li>
-<li><a href="#/slide-org91315ce">3. Equipo de apoyo</a></li>
-<li><a href="#/slide-org6baf37b">4. Otros formatos</a></li>
+<li><a href="#/slide-org07968d5">1. Caso simplificado</a></li>
+<li><a href="#/slide-org1670cd2">2. ACNEE por transtorno grave de conducta</a></li>
+<li><a href="#/slide-org1e7a294">3. Equipo de apoyo</a></li>
+<li><a href="#/slide-orgfb54dff">4. Otros formatos</a></li>
 </ul>
 </div>
 </div>
@@ -1731,10 +1734,18 @@ window.addEventListener("load",()=>{
 </script>
 
 
-<section>
-<section id="slide-orgb7f72bd">
+<section id="slide-org07968d5">
 <div class="slide-header"></div>
-<h2 id="orgb7f72bd"><span class="section-number-2">1</span> Caso simplificado</h2>
+<h2 id="org07968d5"><span class="section-number-2">1</span> Caso simplificado</h2>
+<ul>
+<li>No contempla coordinaciones</li>
+<li>Sin dictámen</li>
+<li>No tiene cooperación orientadora/PTSC</li>
+
+</ul>
+</section>
+<section id="slide-org07968d5-split">
+
 
 <div class="figure">
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA/sAAAMpCAIAAADU7LRJAAAAKXRFWHRjb3B5bGVmdABHZW5lcmF0
@@ -2626,11 +2637,16 @@ VCNCCCFXmZ6eNw4dfLpr+XD48Av/H1iO36bDZiPxAAAAAElFTkSuQmCC" />
 
 <div class="slide-footer"></div>
 </section>
-</section>
-<section>
-<section id="slide-orgbd13a82">
+<section id="slide-org1670cd2">
 <div class="slide-header"></div>
-<h2 id="orgbd13a82"><span class="section-number-2">2</span> ACNEE por transtorno grave de conducta</h2>
+<h2 id="org1670cd2"><span class="section-number-2">2</span> ACNEE por transtorno grave de conducta</h2>
+<ul>
+<li>Proceso para conceder al centro el TIS</li>
+
+</ul>
+</section>
+<section id="slide-org1670cd2-split">
+
 
 <div class="figure">
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAABLgAAAJSCAIAAABPyOvfAAAAKXRFWHRjb3B5bGVmdABHZW5lcmF0
@@ -3502,11 +3518,9 @@ AElFTkSuQmCC" />
 
 <div class="slide-footer"></div>
 </section>
-</section>
-<section>
-<section id="slide-org91315ce">
+<section id="slide-org1e7a294">
 <div class="slide-header"></div>
-<h2 id="org91315ce"><span class="section-number-2">3</span> Equipo de apoyo</h2>
+<h2 id="org1e7a294"><span class="section-number-2">3</span> Equipo de apoyo</h2>
 
 <div class="figure">
 <p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAA10AAAEWCAIAAAASGWqOAAAAKXRFWHRjb3B5bGVmdABHZW5lcmF0
@@ -3929,17 +3943,82 @@ QmCC" />
 
 <div class="slide-footer"></div>
 </section>
-</section>
-<section>
-<section id="slide-org6baf37b">
+<section id="slide-orgfb54dff">
 <div class="slide-header"></div>
-<h2 id="org6baf37b"><span class="section-number-2">4</span> Otros formatos</h2>
+<h2 id="orgfb54dff"><span class="section-number-2">4</span> Otros formatos</h2>
 <ul>
 <li><a href="./charla-tis.pdf">PDF</a></li>
 <li><a href="./charla-tis.wp.html">Página web</a></li>
 <li><a href="./charla-tis.reveal.html">Transparencias</a></li>
 
 </ul>
+
+
+
+<div class="figure">
+<p><img src="data:image/png;base64,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
+QmCC" />
+</p>
+</div>
 <div class="slide-footer"></div>
 </section>
 </section>

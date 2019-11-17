@@ -9,8 +9,11 @@
 # Available transitions are: default|cube|page|concave|zoom|linear|fade|none
 #+REVEAL_TRANS: linear
 # beige black blood league moon night serif simple sky solarized white
-#+REVEAL_THEME: beige
+#+REVEAL_THEME: sky
 #+language: es
+
+#+REVEAL_HLEVEL: 0
+#+TITLE: Modelo de intervención
 
 
 #+OPTIONS: html-postamble:nil
@@ -31,13 +34,15 @@ window.addEventListener("load",()=>{
 </script>
 #+end_export
 
-
-
 #+AUTHOR: Paz Fábregas Seguí
 #+EMAIL: paz.fabregas@educa.madrid.org
 
 
 * Caso simplificado
+- No contempla coordinaciones
+- Sin dictámen
+- No tiene cooperación orientadora/PTSC
+#+reveal: split
 
 #+BEGIN_SRC plantuml :file plantuml.png
 @startuml
@@ -70,6 +75,9 @@ stop
 
 
 * ACNEE por transtorno grave de conducta
+- Proceso para conceder al centro el TIS
+#+reveal: split
+
 #+BEGIN_SRC plantuml :file acnee-grave-conducta.png
 @startuml
 |EOEP|
@@ -143,3 +151,7 @@ note left of TIS: ACNEE por trastorno de conducta
 - [[./charla-tis.pdf][PDF]]
 - [[./charla-tis.wp.html][Página web]] 
 - [[./charla-tis.reveal.html][Transparencias]]
+
+
+[[file:qr.png]]
+
