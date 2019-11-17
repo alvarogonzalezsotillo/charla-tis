@@ -10,6 +10,8 @@
 #+REVEAL_TRANS: linear
 # beige black blood league moon night serif simple sky solarized white
 #+REVEAL_THEME: beige
+#+language: es
+
 
 # IMAGENES AUTOENLAZADAS EN HTML
 #+begin_export html
