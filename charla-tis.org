@@ -13,6 +13,8 @@
 #+language: es
 
 
+#+OPTIONS: html-postamble:nil
+
 # IMAGENES AUTOENLAZADAS EN HTML
 #+begin_export html
 <script>
