@@ -102,12 +102,14 @@ stop
 @startuml
 |EOEP|
 start
-:Proceso de evaluación;
+:Proceso de 
+evaluación;
 :Informe;
 :Dictámen;
 split
 |USMI|
-:Derivación al pediatra;
+:Derivación al 
+pediatra;
 :Diagnóstico clínico;
 split again
 |Inspección|
@@ -118,7 +120,8 @@ PT y/o AL
 end note
 |Centro educativo|
 end split
-:Solicitud a la SUPE (TIS);
+:Solicitud a 
+la SUPE (TIS);
 note right
 Con diagnóstico 
 clínico 
@@ -157,9 +160,15 @@ rectangle EOEP{
 
 :TIS:
 
-note right of TIS: Preferente TEA
+note right of TIS
+Preferente 
+TEA
+end note
 
-note left of TIS: ACNEE por trastorno de conducta
+note left of TIS
+ACNEE por trastorno
+de conducta
+end note
 
 @enduml
 #+END_SRC
