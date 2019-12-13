@@ -64,8 +64,7 @@ window.addEventListener("load",()=>{
 - No tiene cooperación orientadora/PTSC
 #+reveal: split
 
-#+BEGIN_SRC plantuml :file plantuml.png
-@startuml
+#+BEGIN_SRC plantuml :file caso-simplificado.svg
 |Tutor|
 start
 :Medidas ordinarias;
@@ -87,19 +86,17 @@ start
 |Orientador|
 #aaaaff:Derivaciones y coordinaciones;
 stop
-@enduml
 #+END_SRC
 
 #+RESULTS:
-[[file:plantuml.png]]
+[[file:caso-simplificado.svg]]
 
 
 * ACNEE por transtorno grave de conducta
 - Proceso para conceder al centro el TIS
 #+reveal: split
 
-#+BEGIN_SRC plantuml :file acnee-grave-conducta.png
-@startuml
+#+BEGIN_SRC plantuml :file acnee-grave-conducta.svg
 |EOEP|
 start
 :Proceso de 
@@ -133,7 +130,6 @@ end note
 |SUPE|
 :Aprueba TIS;
 stop
-@enduml
 #+END_SRC
 
 #+RESULTS:
@@ -141,9 +137,7 @@ stop
 
 * Equipo de apoyo
 
-#+BEGIN_SRC plantuml :file equipo-apoyo.png
-@startuml
-
+#+BEGIN_SRC plantuml :file equipo-apoyo.svg
 :PT: 
 :AL: 
 
@@ -169,8 +163,6 @@ note left of TIS
 ACNEE por trastorno
 de conducta
 end note
-
-@enduml
 #+END_SRC
 
 #+RESULTS:
